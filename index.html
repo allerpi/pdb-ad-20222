@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="name">
+      <img src="./img/logo.png" alt="" srcset="" />
+      <div class="name">
+        <img src="./img/right_info.png" alt="" srcset="" />
+        <p>Nombre de alumno</p>
+      </div>
+    </header>
+    <section class="blue-strip name">
+      <iconify-icon icon="material-symbols:arrow-back-rounded" class="b-arrow"></iconify-icon>
+      <h1 class="cat">Catálogo de proyectos</h1>
+    </section>
+    <section class="content">
+      <div class="filtres">
+        <details class="border">
+          <summary id="Área" count="0">Área</summary>
+            <details>
+              <summary class="detail-options" id="Académica" count="0">Académica </summary>
+              <div class="mul-choice">
+                <div class="choice">
+                  <input type="checkbox" id="a1" onclick="change('Académica', 'a1', 'Área')">
+                  <label for="a1">Producción y Diseño de contenidos digitales</label><br>
+                </div>
+                <div class="choice">
+                  <input type="checkbox" id="a2" onclick="change('Académica', 'a2', 'Área')">
+                  <label for="a2">Innovación educativa </label><br>
+                </div>
+                <div class="choice">
+                  <input type="checkbox" id="a3" onclick="change('Académica', 'a3', 'Área')">
+                  <label for="a3">Dashboards y Data Analytics</label><br>
+                </div>
+                <div class="choice">
+                  <input type="checkbox" id="a4" onclick="change('Académica', 'a4', 'Área')">
+                  <label for="a4">Centro de Idiomas</label><br>
+                </div>
+              </div>
+            </details>
+
+            <details>
+              <summary class="detail-options" id="LiFE" count="0">LiFE </summary>
+              <div class="mul-choice">
+                <div class="choice">
+                  <input type="checkbox" id="l1" onclick="change('LiFE', 'l1', 'Área')">
+                  <label for="l1">Producción y Diseño de contenidos digitales</label><br>
+                </div>
+                <div class="choice">
+                  <input type="checkbox" id="l2" onclick="change('LiFE', 'l2', 'Área')">
+                  <label for="l2">Aplicaciones prácticas y vinculación</label><br>
+                </div>
+                <div class="choice">
+                  <input type="checkbox" id="l3" onclick="change('LiFE', 'l3', 'Área')">
+                  <label for="l3">Diseño y manejo de Redes Sociales del Centro de Vinculación y Desarrollo Profesional CVDP</label><br>
+                </div>
+                <div class="choice">
+                  <input type="checkbox" id="l4" onclick="change('LiFE', 'l4', 'Área')">
+                  <label for="l4">Prefectos</label><br>
+                </div>
+              </div>
+            </details>
+
+            <details>
+              <summary class="detail-options" id="Biblioteca" count="0">Biblioteca</summary>
+              <div class="mul-choice">
+                <div class="choice">
+                  <input type="checkbox" id="b1" onclick="change('Biblioteca', 'b1', 'Área')">
+                  <label for="b1">Organización de eventos</label><br>
+                </div>
+                <div class="choice">
+                  <input type="checkbox" id="b2" onclick="change('Biblioteca', 'b2', 'Área')">
+                  <label for="b2">Market research</label><br>
+                </div>
+                <div class="choice">
+                  <input type="checkbox" id="b3" onclick="change('Biblioteca', 'b3', 'Área')">
+                  <label for="b3">Biblioteca digital</label><br>
+                </div>
+                <div class="choice">
+                  <input type="checkbox" id="b4" onclick="change('Biblioteca', 'b4', 'Área')">
+                  <label for="b4">Customer Experience</label><br>
+                </div>
+              </div>
+            </details>
+
+            <details>
+              <summary class="detail-options" id="Emprendimiento" count="0">Emprendimiento</summary>
+              <div class="mul-choice">
+                <div class="choice">
+                  <input type="checkbox" id="e1" onclick="change('Emprendimiento', 'e1', 'Área')">
+                  <label for="e1">Diseño de procesos</label><br>
+                </div>
+                <div class="choice">
+                  <input type="checkbox" id="e2" onclick="change('Emprendimiento', 'e2', 'Área')">
+                  <label for="e2">Benchmarking</label><br>
+                </div>
+                <div class="choice">
+                  <input type="checkbox" id="e3" onclick="change('Emprendimiento', 'e3', 'Área')">
+                  <label for="e3">Actividad Talento Emprendedor</label><br>
+                </div>
+                <div class="choice">
+                  <input type="checkbox" id="e4" onclick="change('Emprendimiento', 'e4', 'Área')">
+                  <label for="e4">Desarrollo de habilitadores</label><br>
+                </div>
+              </div>
+            </details>
+
+            <details>
+              <summary class="detail-options" id="TecServices" count="0">TecServices</summary>
+              <div class="mul-choice">
+                <div class="choice">
+                  <input type="checkbox" id="t1" onclick="change('TecServices', 't1', 'Área')">
+                  <label for="t1">Diseño de procesos</label><br>
+                </div>
+                <div class="choice">
+                  <input type="checkbox" id="t2" onclick="change('TecServices', 't2', 'Área')">
+                  <label for="t2">Benchmarking</label><br>
+                </div>
+                <div class="choice">
+                  <input type="checkbox" id="t3" onclick="change('TecServices', 't3', 'Área')">
+                  <label for="t3">Focus groups</label><br>
+                </div>
+                <div class="choice">
+                  <input type="checkbox" id="t4" onclick="change('TecServices', 't4', 'Área')">
+                  <label for="t4">Market research</label><br>
+                </div>
+              </div>
+            </details>
+
+        </details>
+
+        <details class="border">
+          <summary id="Carrera"">Carrera</summary>
+          <div class="mul-choice">
+            <div class="choice">
+              <input type="radio" id="c01" onclick="change('Carrera', 'c01')">
+              <label for="t4">ITC</label><br>
+            </div>
+          </div>
+        </details>
+
+        <details class="border">
+          <summary id="Semestre">Semestre</summary>
+          <select name="semestre" id="s0" onchange="list('s0', 'Semestre')">
+            <option value="hi" selected hidden>Selecciona un semestre</option>
+            <option value="s1">1er</option>
+            <option value="s2">2do</option>
+            <option value="s3">3ro</option>
+            <option value="s4">4to</option>
+            <option value="s5">5to</option>
+            <option value="s6">6to</option>
+            <option value="s7">7mo</option>
+            <option value="s8">8vo</option>
+            <option value="s9">9no</option>
+            <option value="s10">10mo</option>
+          </select>
+        </details>
+        
+        <details class="border">
+          <summary id="Campus">Campus</summary>
+          <select name="campus" id="cs" onchange="list('cs', 'Campus')">
+            <option value="hi" selected hidden>Selecciona un campus</option>
+            <option value="cs1">Campus Aguascalientes</option>
+            <option value="cs2">Campus Chiapas</option>
+            <option value="cs3">Campus Chihuahua</option>
+            <option value="cs4">Campus Ciudad de México</option>
+            <option value="cs5">Campus Ciudad Juárezo</option>
+            <option value="cs6">Campus Ciudad Obregón</option>
+            <option value="cs7">Campus Eugenio Garza Lagüera</option>
+            <option value="cs8">Campus Hidalgo</option>
+            <option value="cs9">Campus Querétaro</option>
+          </select>
+        </details>
+
+        <details class="border">
+          <summary id="Competencias a reforzar" count="0">Competencias a reforzar</summary>
+          <div class="mul-choice">
+            <div class="choice">
+              <input type="checkbox" id="cr1" onclick="change('Competencias a reforzar', 'cr1')">
+              <label for="cr1">Resistencia a la presión</label><br>
+            </div>
+            <div class="choice">
+              <input type="checkbox" id="cr2" onclick="change('Competencias a reforzar', 'cr2')">
+              <label for="cr2">Empatía</label><br>
+            </div>
+            <div class="choice">
+              <input type="checkbox" id="cr3" onclick="change('Competencias a reforzar', 'cr3')">
+              <label for="cr3">Comunicación</label><br>
+            </div>
+            <div class="choice">
+              <input type="checkbox" id="cr4" onclick="change('Competencias a reforzar', 'cr4')">
+              <label for="cr4">Razonamiento para la complejidad</label><br>
+            </div>
+            <div class="choice">
+              <input type="checkbox" id="cr5" onclick="change('Competencias a reforzar', 'cr5')">
+              <label for="cr5">Puntualidad</label><br>
+            </div>
+            <div class="choice">
+              <input type="checkbox" id="cr6" onclick="change('Competencias a reforzar', 'cr6')">
+              <label for="cr6">Autoconfianza</label><br>
+            </div>
+          </div>
+        </details>
+
+        <details class="border">
+          <summary id="Número de horas" count="0">Número de horas</summary>
+          <div class="mul-choice">
+            <div class="choice">
+              <input type="radio" name="drone" id="nh1" onclick="change('Número de horas', 'nh1')">
+              <label for="cr1">Semestre</label><br>
+            </div>
+            <div class="choice">
+              <input type="radio" name="drone" id="nh2" onclick="change('Número de horas', 'nh2')">
+              <label for="cr2">Año</label><br>
+            </div>
+            <div class="choice">
+              <input type="radio" name="drone" id="nh3" onclick="change('Número de horas', 'nh3')">
+              <label for="cr3">Por horas</label><br>
+            </div>
+          </div>
+        </details>
+
+        <details class="border">
+          <summary id="Formato" count="0">Formato</summary>
+          <div class="mul-choice">
+            <div class="choice">
+              <input type="checkbox" id="ff1" onclick="change('Formato', 'ff1')">
+              <label for="cr1">Presencial</label><br>
+            </div>
+            <div class="choice">
+              <input type="checkbox" id="ff2" onclick="change('Formato', 'ff2')">
+              <label for="cr2">Remoto</label><br>
+            </div>
+            <div class="choice">
+              <input type="checkbox" id="ff3" onclick="change('Formato', 'ff3')">
+              <label for="cr3">Híbrido</label><br>
+            </div>
+          </div>
+        </details>
+
+      </div>
+      <div class="stuffs"></div>
+    </section>
+  </body>
+  <script>
+    function change(id, chid, sid=false) {
+      console.log('i was called!')
+      let el = document.getElementById(id)
+      let ch = document.getElementById(chid)
+      
+      let num = ch.checked ? 1 : -1
+
+      if(ch.type == 'radio') {
+        el.innerText = id + ' ' + (num > 0 ? '✅' : '')
+        return
+      }
+
+      if (sid) {
+        let sec = document.getElementById(sid)
+        let snum = parseInt(sec.getAttribute('count'))
+        snum += num
+        sec.setAttribute('count', snum)
+        sec.innerText = `${sid} (${snum})`
+      }
+      num += parseInt(el.getAttribute('count'))
+      const txt = `${id} (${num})`
+
+      el.innerText = txt
+      el.setAttribute('count', num)
+    }
+
+    function list(id, sid) {
+      const el = document.getElementById(id)
+      const sec = document.getElementById(sid)
+      if(el.selectedOptions.length > 0) {
+        sec.innerText = `${sid} ✅`
+      }
+    }
+  </script>
+</html>
